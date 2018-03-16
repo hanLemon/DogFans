@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="217" id="oYs-dh-8yY" customClass="PhotoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="217"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oYs-dh-8yY" id="uMB-wW-0pc">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="216"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U0z-Xc-aRg">
+                        <rect key="frame" x="8" y="8" width="373" height="200"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4Q-Ee-PgD">
+                        <rect key="frame" x="-3" y="174" width="221" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="EiY-NU-QTc"/>
+                            <constraint firstAttribute="width" constant="221" id="iaW-hI-CQ4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="topMargin" secondItem="U0z-Xc-aRg" secondAttribute="top" id="6q2-Fd-IrC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="U0z-Xc-aRg" secondAttribute="bottom" id="ES2-Tu-peB"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="U0z-Xc-aRg" secondAttribute="leading" id="WH9-51-l4I"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="U0z-Xc-aRg" secondAttribute="trailing" constant="4" id="iZs-eX-73z"/>
+                    <constraint firstItem="U4Q-Ee-PgD" firstAttribute="leading" secondItem="uMB-wW-0pc" secondAttribute="leadingMargin" constant="-11" id="lBN-gu-nUZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="U4Q-Ee-PgD" secondAttribute="bottom" constant="6" id="nb2-XF-tdx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="desLabel" destination="U4Q-Ee-PgD" id="8W3-ej-eCu"/>
+                <outlet property="iconImageView" destination="U0z-Xc-aRg" id="zUy-AI-uTx"/>
+            </connections>
+            <point key="canvasLocation" x="386.5" y="500.5"/>
+        </tableViewCell>
+    </objects>
+</document>
